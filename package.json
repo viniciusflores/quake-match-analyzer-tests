@@ -7,7 +7,12 @@
   "author": "Vinicius Flores <viniciusflores379@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "mocha",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
