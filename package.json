@@ -1,0 +1,9 @@
+{
+  "name": "quake-match-analyzer-tests",
+  "version": "1.0.0",
+  "description": "This is a project to analyze the log of Quake games",
+  "main": "index.js",
+  "repository": "git@github.com:viniciusflores/quake-match-analyzer-tests.git",
+  "author": "Vinicius Flores <viniciusflores379@gmail.com>",
+  "license": "MIT"
+}
