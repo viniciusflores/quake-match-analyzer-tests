@@ -6,6 +6,9 @@
   "repository": "git@github.com:viniciusflores/quake-match-analyzer-tests.git",
   "author": "Vinicius Flores <viniciusflores379@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "prepare": "husky install"
+  },
   "devDependencies": {
     "eslint": "^8.21.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -13,11 +16,19 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
   "engines": {
     "node": ">=14",
     "npm": "please-use-yarn",
     "yarn": ">=1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
