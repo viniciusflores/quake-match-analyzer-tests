@@ -7,11 +7,12 @@
   "author": "Vinicius Flores <viniciusflores379@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
+    "test": "NODE_ENV=test mocha",
     "prepare": "husky install"
   },
   "dependencies": {
     "chai": "^4.3.6",
+    "dotenv-flow": "^3.2.0",
     "mocha": "^8.3.2"
   },
   "devDependencies": {
