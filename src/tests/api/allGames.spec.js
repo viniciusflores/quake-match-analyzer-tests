@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import got from 'got';
+import games from '../../../assets/allgames.json';
 
 let baseUrl;
 describe('Suite tests of GET in /games', function () {
@@ -22,12 +23,15 @@ describe('Suite tests of GET in /games', function () {
         'application/json; charset=utf-8',
       );
       expect(body).to.not.equal(null);
+      expect(body).to.deep.equal(games);
       expect(body).to.include.any.keys('game_1', 'game_2');
       expect(body.game_1).to.include.any.keys(
         'total_kills',
         'players',
         'kills',
       );
+
+      // console.log(games);
     } catch (err) {
       console.error('FAILED on CATCH of: list all games');
       console.error(`ERROR: ${err}`);
