@@ -30,8 +30,6 @@ describe('Suite tests of GET in /games', function () {
         'players',
         'kills',
       );
-
-      // console.log(games);
     } catch (err) {
       console.error('FAILED on CATCH of: list all games');
       console.error(`ERROR: ${err}`);
