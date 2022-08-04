@@ -8,6 +8,8 @@
 
 [Yarn](https://yarnpkg.com/)
 
+> If you want to see the report, you will also need [Java 8](https://www.oracle.com/java/technologies/downloads/#java8) or higher. This is a prerequisite of allure reports.
+
 > Consider use [NVM](https://github.com/nvm-sh/nvm) to configure and set you Node version.
 
 ### Features
