@@ -1,5 +1,4 @@
 const mochaGlobalSetup = function () {
-  console.log('passou no setup');
   const host = process.env.API_HOST;
   const port = process.env.API_PORT;
   const path = process.env.API_PATH;

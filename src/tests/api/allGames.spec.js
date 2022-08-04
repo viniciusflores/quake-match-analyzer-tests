@@ -23,8 +23,13 @@ describe('Suite tests of GET in /games', function () {
       );
       expect(body).to.not.equal(null);
       expect(body).to.include.any.keys('game_1', 'game_2');
+      expect(body.game_1).to.include.any.keys(
+        'total_kills',
+        'players',
+        'kills',
+      );
     } catch (err) {
-      console.error('FAILED on CATCH of: this is a api test');
+      console.error('FAILED on CATCH of: list all games');
       console.error(`ERROR: ${err}`);
     }
   });
