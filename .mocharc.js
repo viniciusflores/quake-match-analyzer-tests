@@ -4,7 +4,9 @@ require('dotenv-flow').config({
 });
 
 module.exports = {
-  color: true,
-  require: ['@babel/register', 'src/utils/mocha/mochaGlobalSetup.js'],
-  spec: ['src/tests/api/**/*.spec.js'],
+  'color': true,
+  'reporter': 'mocha-multi',
+  'reporter-option': ['spec=-', 'mocha-allure-reporter=-'],
+  'require': ['@babel/register', 'src/utils/mocha/mochaGlobalSetup.js'],
+  'spec': ['src/tests/api/**/*.spec.js'],
 };

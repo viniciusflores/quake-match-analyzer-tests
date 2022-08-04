@@ -68,3 +68,25 @@ Run all tests
 ```js
 yarn test
 ```
+
+## Reports
+
+### Allure
+
+Run this command to generate the allure report in the directory `./allure-results`:
+
+```js
+yarn report:generate
+```
+
+You can run this command to start a server on your machine and open the allure report on the browser:
+
+```js
+yarn report:open
+```
+
+To clear or reset reports, run the follow command
+
+```js
+yarn clean
+```

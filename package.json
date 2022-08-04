@@ -8,13 +8,19 @@
   "license": "MIT",
   "scripts": {
     "test": "NODE_ENV=test mocha",
+    "report:generate": "allure generate --clean",
+    "report:open": "allure open",
+    "clean": "rm -rf allure-report allure-results",
     "prepare": "husky install"
   },
   "dependencies": {
+    "allure-commandline": "^2.18.1",
     "chai": "^4.3.6",
     "dotenv-flow": "^3.2.0",
     "got": "11.8.2",
-    "mocha": "^8.3.2"
+    "mocha": "^8.3.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-multi": "^1.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
