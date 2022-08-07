@@ -22,31 +22,25 @@
 
 [DotEnv-Flow](https://www.npmjs.com/package/dotenv-flow) Thinking to validate more than one environment of the test, we have the dotenv-flow to divide the specific variables for environments as soon as necessary.
 
-## Prerequisites
+## Prerequisites v2
 
 This test project was based on validating the endpoints of an existing API.
 
-Before running the project, you need to clone the project API from the GITHUB and run it locally.
+Before running the automated tests project, you need to run the API in your machine in port 8080.
 
-### Running the prerequisites
+The best way, is running the docker-compose this project.
 
-Clone the project:
+#### Requirements
+
+[Docker-compose](https://docs.docker.com/compose/)
+
+#### Running the prerequisites
+
+Clone the project and run by docker-compose
 
 ```sh
-git clone git@github.com:paulo-silva/quake-log-parser.git
+docker-compose up
 
-```
-
-Install dependencies:
-
-```js
-npm install
-```
-
-Run the project in localhost:8080:
-
-```js
-npm run start
 ```
 
 ## Getting Started
